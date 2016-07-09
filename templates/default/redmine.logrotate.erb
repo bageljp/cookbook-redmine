@@ -1,0 +1,6 @@
+<%= node['redmine']['log_rotate'] %>/redmine/log/*log {
+    daily
+    rotate <%= node['redmine']['log_rotate'] %>
+    dateext
+    missingok
+}
